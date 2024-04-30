@@ -1,46 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*<uniquifier>: Use a unique and descriptive class name
- <weight>: Use a value from 200 to 800
-
-.assistant-<uniquifier> {
-  font-family: "Assistant", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
+/* .libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
   font-style: normal;
-} */
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 
 /* navbar styling */
 
 .navbar{
-  font-family: "Assistant", sans-serif;
-   font-size: 18px;
-   line-height: 26px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+   background-color:#023430;
    text-transform: uppercase;
+   color: white;
    box-shadow: 0 8px 6px -6px gray;
 }
 .nav-link{
-  color: rgb(0, 0, 0);
+  color: white;
   cursor: pointer;
   
 }
 
 .nav-link:hover{
-   color: blue;
-   box-shadow: 0 2px 2px -1px black;
+   color: rgb(255, 234, 0);
    border-radius: 2px;
 }
 .navbar-brand{
   font-weight: 700;
-  font-family: "roboto",sans-serif;
+  color: white;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
   letter-spacing: 2px;
+}
+.navbar-brand:hover{
+  color: yellow;
 }
 /* **************************[page is not found */
 .pnf{
@@ -52,10 +61,12 @@
 }
 .png-title{
   font-size: 100px;
+  font-family: "Libre Baskerville", serif;
   font-weight: 700;
 }
 .png-heading{
   font-weight: normal;
+  font-family: "Libre Baskerville", serif;
 }
 
 .pnf-btn{
@@ -63,48 +74,78 @@
   border-radius: 2px;
   border: 1px solid black;
   text-decoration: none;
+  font-family: "Libre Baskerville", serif;
   padding: 10px;
   margin-top: 10px;
   background-color: rgb(12, 241, 8);
 }
-.footer-img{
-  height: 400px;
-  width: auto;
-  background-blend-mode: color-burn;
- 
-}
-.footer-text,
-.footer-title,
-.card-text{
-  color: rgb(136, 23, 23);
-}
-.card{
-  background: rgb(177, 174, 159);
-  height: 200px;
-  width: auto;
-}
-.footer-nav a{
-  text-decoration: none;
-  padding: 3px;
-  font-size: larger;
-
-}
-.footer-nav a:hover{
-  color: rgb(255, 242, 3);
-  box-sizing: content-box 2px;
-  box-shadow: 0px 2px 2px rgb(4, 4, 5);
-  border-radius: 4px;
-}
-.footer-nav{
-margin-bottom: 400px;
-}
-/* ========================================= */
 /* =========contact us ========= */
 .contactus {
   margin: 0;
   padding: 0;
+  font-family: "Libre Baskerville", serif;
   height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+/* ******footer section******** */
+.footer {
+  background-color: #023430;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  padding: 0 15px;
+  
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #444;
+}
+
+.footer-copyright p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.fab {
+  margin-right: 5px;
 }

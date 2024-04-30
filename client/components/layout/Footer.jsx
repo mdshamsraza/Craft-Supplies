@@ -1,36 +1,39 @@
-import React from 'react'
-function Footer() {
+import React from 'react';
+
+const Footer = () => {
   return (
-    <>
-     <div className="card text-bg-dark text-center mt">
-         <div className="card-img-overlay">
-         <h5 className="footer-title">Craft-Supplies</h5>
-         <p className="footer-text">
-           This is a wider card with supporting text below as a natural lead-in to
-           additional content. This content is a little bit longer.
-         </p>
-         <p className="card-text">
-         <small>Last updated 3 mins ago</small>
-        </p>
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/policy">Policy</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
         </div>
-     </div>
+        <div className="footer-section">
+          <h3>Help</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div className="footer-section">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#"><i className="fab fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="#"><i className="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i className="fab fa-instagram"></i> Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div className="footer-copyright">
+        <p>&copy; 2024 Craft-Suplies Inc. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+};
 
-  <div className="card text-center">
-    <div className="card-body">
-      <h5 className="card-title">Special title treatment</h5>
-      <p className="card-text">
-        With supporting text below as a natural lead-in to additional content.
-      </p>
-    </div>
-    <div className="footer-nav">
-    <a href="Contact">Contactus</a>
-    |<a href="about">about</a>
-    |<a href="policy">Privacy Policy</a>
-    </div>
-  </div>
-</>
-
-  )
-}
-
-export default Footer
+export default Footer;
