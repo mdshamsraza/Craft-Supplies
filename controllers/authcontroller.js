@@ -7,10 +7,10 @@ export const registerController = async (req, res) => {
     const { name, email, password, phone, address } = req.body;
     //validations
     if (!name) {
-      return res.send({ error: "Name is Required" });
+      return res.send({ message: "Name is Required" });
     }
     if (!email) {
-      return res.send({ error: "Email is required" });
+      return res.send({ message: "Email is required" });
     }
     if (!password) {
       return res.send({ message: "Password is Required" });
